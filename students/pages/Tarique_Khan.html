@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tarique Khan — B.Tech Artificial Intelligence student at Galgotias University.">
+<title>Tarique Khan | Department of Artificial Intelligence</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,Helvetica,sans-serif;background:#f7f7f7;color:#17171c;line-height:1.7}
+a{text-decoration:none;color:inherit}
+.site-header{position:sticky;top:0;z-index:100;background:#17161d;color:#fff;box-shadow:0 4px 18px #0002}
+.nav-wrap{max-width:1160px;margin:auto;min-height:96px;padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{display:flex;align-items:center;gap:16px;min-width:0}
+.brand-mark{width:58px;height:58px;flex:none}
+.dept-name{display:block;font-size:24px;line-height:1.1;font-weight:800}
+.school-name{display:block;color:#bdbac3;font-size:14px;letter-spacing:1px;margin-top:5px}
+.main-nav ul{display:flex;list-style:none;gap:22px}
+.main-nav a{font-weight:700;white-space:nowrap}
+.main-nav a:hover{color:#e63946}
+.hero{max-width:1160px;margin:55px auto 25px;padding:0 28px}
+.breadcrumb{color:#888;font-size:15px;margin-bottom:8px}
+.hero h1{font-size:clamp(38px,6vw,54px);line-height:1.1;letter-spacing:-1.2px}
+.lead{color:#aa2733;font-weight:800;font-size:19px}
+.container{max-width:1160px;margin:auto;padding:0 28px 70px}
+.card{background:#fff;border:1px solid #e4e4e4;border-radius:24px;padding:38px;margin:24px 0;box-shadow:0 8px 25px #0000000e}
+.profile{display:grid;grid-template-columns:280px 1fr;gap:42px;align-items:center}
+.avatar{width:245px;height:245px;border-radius:50%;margin:auto;background:linear-gradient(145deg,#d92838,#9f1623);color:#fff;display:grid;place-items:center;font-size:76px;font-weight:800}
+.profile h2{font-size:32px}
+.role{color:#a72631;font-weight:800;font-size:18px;margin-bottom:18px}
+.card p{color:#69696f;font-size:17px}
+.section-label{margin-top:24px;margin-bottom:12px;color:#6d6d73;font-size:14px;font-weight:800;letter-spacing:1px;text-transform:uppercase}
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tag{background:#faeeee;color:#a72a35;padding:8px 16px;border-radius:999px;font-weight:700;font-size:15px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.icon{width:74px;height:74px;border-radius:18px;background:#faeeee;display:grid;place-items:center;font-size:35px;margin-bottom:18px}
+.card h3{font-size:25px;margin-bottom:8px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:15px}
+.contact-item{padding:16px 18px;border-radius:14px;background:#fafafa;border:1px solid #ececec;overflow-wrap:anywhere}
+.contact-item strong{display:block}
+.btn{display:inline-block;margin-top:18px;padding:10px 17px;border:1px solid #25242b;border-radius:10px;font-weight:800}
+.btn:hover{background:#17161d;color:#fff}
+footer{background:#17161d;color:#fff;padding:42px 7%;margin-top:20px}
+.footer-grid{max-width:1160px;margin:auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:35px}
+footer h4{margin-bottom:10px}
+footer p,footer a{color:#bbb9c1;font-size:14px}
+footer ul{list-style:none}
+footer li{margin:6px 0}
+.footer-brand{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.copyright{max-width:1160px;margin:30px auto 0;padding-top:18px;border-top:1px solid #35343b;color:#99979f;font-size:14px}
+.back-top{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border:0;border-radius:50%;background:#e63946;color:white;font-size:21px;display:none;place-items:center;cursor:pointer}
+@media(max-width:850px){
+ .nav-wrap{padding:14px 20px;align-items:flex-start;flex-direction:column;gap:10px}
+ .brand{width:100%}.dept-name{font-size:19px}.school-name{font-size:11px}
+ .main-nav{width:100%;overflow-x:auto}.main-nav ul{width:max-content;gap:18px}
+ .hero{margin-top:42px;padding:0 20px}.container{padding-left:20px;padding-right:20px}
+ .profile,.grid,.contact,.footer-grid{grid-template-columns:1fr}
+ .profile{text-align:center}.tags{justify-content:center}
+ .avatar{width:200px;height:200px;font-size:60px}
+ .card{padding:30px 23px}
+}
+@media(max-width:500px){
+ .brand-mark{width:50px;height:50px}.dept-name{font-size:17px}.school-name{font-size:9px;letter-spacing:.7px}
+ .hero h1{font-size:40px}.lead{font-size:17px}.card p{font-size:16px}
+ .card{border-radius:22px}.avatar{width:175px;height:175px;font-size:52px}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+<div class="nav-wrap">
+<a href="#home" class="brand">
+<svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="AI logo">
+<path d="M50 50 L50 4 A46 46 0 0 1 93 36 Z" fill="#e63946"/>
+<path d="M50 50 L93 36 A46 46 0 0 1 74 92 Z" fill="#fb8500"/>
+<path d="M50 50 L74 92 A46 46 0 0 1 15 82 Z" fill="#3a0ca3"/>
+<path d="M50 50 L15 82 A46 46 0 0 1 50 4 Z" fill="#0d9488"/>
+<circle cx="50" cy="50" r="27" fill="#14141a"/>
+<text x="50" y="57" text-anchor="middle" font-family="Arial" font-weight="700" font-size="22" fill="#fff">AI</text>
+</svg>
+<span><span class="dept-name">Dept. of Artificial Intelligence</span><span class="school-name">SCHOOL OF SKILL SCIENCES AND ENTREPRENEURSHIP</span></span>
+</a>
+<nav class="main-nav"><ul>
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#faculty">Faculty</a></li><li><a href="#students">Students</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="breadcrumb">Home / Students / Tarique Khan</div>
+<h1>Tarique Khan</h1>
+<div class="lead">B.Tech in Artificial Intelligence — Student</div>
+</section>
+
+<main class="container">
+
+<section id="about">
+<div class="card profile">
+<div class="avatar">TK</div>
+<div>
+<h2>Tarique Khan</h2>
+<div class="role">B.Tech in Artificial Intelligence</div>
+<p>
+I am a technology enthusiast exploring Artificial Intelligence, Machine Learning, programming and entrepreneurship. I enjoy understanding how technology works, solving problems and turning ideas into practical, meaningful solutions. I am building a strong foundation in programming, data structures, algorithms and AI while gradually moving towards practical projects.
+</p>
+<div class="section-label">Programming &amp; AI Skills</div>
+<div class="tags">
+<span class="tag">Python</span><span class="tag">C</span><span class="tag">C++</span><span class="tag">Artificial Intelligence</span><span class="tag">DSA</span>
+</div>
+</div>
+</div>
+
+<div class="grid">
+<div class="card">
+<div class="icon">🧩</div>
+<h3>AI &amp; Problem-Solving</h3>
+<p>I enjoy solving problems and experimenting with different approaches. I am especially interested in understanding how AI learns from data, makes predictions and automates tasks. I like learning by combining concepts with practical examples and projects.</p>
+</div>
+<div class="card">
+<div class="icon">💡</div>
+<h3>Interests</h3>
+<div class="tags">
+<span class="tag">Artificial Intelligence</span><span class="tag">Generative AI</span><span class="tag">Machine Learning</span><span class="tag">Computer Vision</span><span class="tag">Robotics</span><span class="tag">Technology</span>
+</div>
+</div>
+</div>
+</section>
+
+<section id="students">
+<div class="card">
+<div class="icon">🚀</div>
+<h3>Career Goal</h3>
+<p>My goal is to become an AI Engineer who can design and build useful AI systems, from understanding data and developing models to creating practical applications. I would like to explore how AI can contribute to space technology, automation and solutions for important social and real-world problems.</p>
+</div>
+
+<div class="card">
+<div class="icon">🎓</div>
+<h3>Education</h3>
+<div class="tags">
+<span class="tag">Class 12 — PCM</span><span class="tag">Galgotias University — B.Tech AI</span>
+</div>
+</div>
+
+<div class="card">
+<div class="icon">🔭</div>
+<h3>Area I'd Like to Explore</h3>
+<p>I would like to explore Artificial Intelligence in greater depth, especially Generative AI, Machine Learning, Computer Vision and Robotics. I am also interested in understanding how intelligent systems can be applied to space technology, automation and socially useful problems.</p>
+</div>
+
+<div class="grid">
+<div class="card">
+<div class="icon">🎮</div>
+<h3>Hobbies</h3>
+<div class="tags">
+<span class="tag">Chess</span><span class="tag">Hollywood Movies</span><span class="tag">Programming</span><span class="tag">Football</span><span class="tag">Cricket</span><span class="tag">Gaming</span><span class="tag">Call of Duty</span><span class="tag">eFootball</span>
+</div>
+</div>
+<div class="card">
+<div class="icon">📚</div>
+<h3>What I'm Learning</h3>
+<p>Currently, I am focusing on programming fundamentals, Python, Data Structures and Algorithms, and the foundations of Artificial Intelligence. I also want to strengthen my C and C++ skills and gradually move from learning concepts to building practical projects.</p>
+</div>
+</div>
+</section>
+
+<section id="faculty">
+<div class="card">
+<div class="icon">🏫</div>
+<h3>Department</h3>
+<p>Department of Artificial Intelligence — School of Skill Sciences and Entrepreneurship, Galgotias University.</p>
+</div>
+</section>
+
+<section id="contact">
+<div class="card">
+<div class="icon">📩</div>
+<h3>Contact</h3>
+<div class="contact">
+<div class="contact-item"><strong>Email</strong><a href="mailto:tarique261GUSSSE3026@galgotiasuniversity.ac.in">tarique261GUSSSE3026@galgotiasuniversity.ac.in</a></div>
+<div class="contact-item"><strong>University</strong>Galgotias University</div>
+<div class="contact-item"><strong>Programme</strong>B.Tech in Artificial Intelligence</div>
+<div class="contact-item"><strong>Location</strong>Greater Noida, Uttar Pradesh</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="footer-grid">
+<div><div class="footer-brand">
+<svg class="brand-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 50 L50 4 A46 46 0 0 1 93 36 Z" fill="#e63946"/><path d="M50 50 L93 36 A46 46 0 0 1 74 92 Z" fill="#fb8500"/><path d="M50 50 L74 92 A46 46 0 0 1 15 82 Z" fill="#3a0ca3"/><path d="M50 50 L15 82 A46 46 0 0 1 50 4 Z" fill="#0d9488"/><circle cx="50" cy="50" r="27" fill="#14141a"/><text x="50" y="57" text-anchor="middle" font-family="Arial" font-weight="700" font-size="22" fill="#fff">AI</text></svg>
+<span><span class="dept-name">Dept. of Artificial Intelligence</span><span class="school-name">SCHOOL OF SKILL SCIENCES AND ENTREPRENEURSHIP</span></span>
+</div><p>A student profile focused on AI, programming, problem-solving and entrepreneurship.</p></div>
+<div><h4>Explore</h4><p><a href="#about">About</a></p><p><a href="#students">Student Profile</a></p></div>
+<div><h4>University</h4><p>Galgotias University</p><p>Greater Noida, Uttar Pradesh</p></div>
+<div><h4>Contact</h4><p><a href="mailto:tarique261GUSSSE3026@galgotiasuniversity.ac.in">Email Tarique</a></p></div>
+</div>
+<div class="copyright">© 2026 Tarique Khan — Department of Artificial Intelligence</div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+<script>
+const b=document.getElementById("backTop");
+window.addEventListener("scroll",()=>b.style.display=scrollY>450?"grid":"none");
+b.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
+</script>
+</body>
+</html>
